@@ -1,71 +1,129 @@
-*{
+/* Reset default margin and padding */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-.main{
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.main {
     text-align: center;
     padding: 30px 15px;
 }
-.content-div{
+
+.content-div {
     background-color: #eee;
     padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-.img-div{
+
+.img-div {
     text-align: center;
     padding: 20px;
     background-color: white;
+    border-radius: 10px;
 }
-.title{
-    font-size: 45px;
+
+.title {
+    font-size: 36px;
     font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 18px;
     margin-bottom: 20px;
 }
-.subtitle{
-    font-size: 15px;
+
+.image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.img-caption {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.header {
+    margin-top: 40px;
     margin-bottom: 20px;
-}
-.image{
-    width: 1000px;
-    margin-bottom: 20px;
-}
-.img-caption{
-    font-size: 17px;
-}
-.header{
-    margin-top: 60px;
-    margin-bottom: 60px;
     font-size: 22px;
     font-weight: 700;
-    text-align: center;
 }
-.tribute-info{
-    padding: 0px 300px;
+
+.tribute-info {
+    padding: 0 20px;
     text-align: left;
 }
-.tribute-info li{
+
+.tribute-info ul {
+    list-style-type: none;
+}
+
+.tribute-info li {
     opacity: 0.8;
-    font-size: 18px;
-    margin-bottom: 30px;
+    font-size: 16px;
+    margin-bottom: 15px;
 }
-.tribute-info li span{
-    font-weight: 700;
+
+.tribute-info li span {
+    font-weight: bold;
 }
-.footer{
-    margin-top: 60px;
-    font-size: 18px;
+
+.footer {
+    margin-top: 40px;
+    font-size: 16px;
     line-height: 22px;
     opacity: 0.8;
     font-style: italic;
     margin-bottom: 20px;
 }
-.footer-2{
+
+.footer-2 {
     font-style: italic;
+    font-size: 16px;
 }
-.tribute-end{
-    margin-top: 30px;
-    font-size: 20px;
+
+.tribute-end {
+    margin-top: 20px;
+    font-size: 18px;
     font-weight: 700;
 }
-.tribute-end a{
+
+.tribute-end a {
     color: rgb(0, 132, 255);
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .title {
+        font-size: 28px;
+    }
+    .subtitle {
+        font-size: 16px;
+    }
+    .image {
+        max-width: 100%;
+    }
+    .tribute-info {
+        padding: 0 10px;
+    }
+    .tribute-info li {
+        font-size: 14px;
+    }
+    .footer, .footer-2, .tribute-end {
+        font-size: 14px;
+    }
 }
